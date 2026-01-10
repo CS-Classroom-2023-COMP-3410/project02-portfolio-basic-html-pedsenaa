@@ -1,54 +1,53 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>W3.CSS Template</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-.w3-row-padding img {margin-bottom: 12px}
-/* Set the width of the sidebar to 120px */
-.w3-sidebar {width: 120px;background: #222;}
-/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-#main {margin-left: 120px}
-/* Remove margins from "page content" on small screens */
-@media only screen and (max-width: 600px) {#main {margin-left: 0}}
-</style>
+  <title>W3.CSS Template</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Keep external libraries (still "only HTML" on your side; no local CSS/JS files) -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body class="w3-black">
+
+<body class="w3-black" style="font-family: 'Montserrat', sans-serif;">
 
 <!-- Icon Bar (Sidebar - hidden on small screens) -->
-<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center"
+     style="width:120px;background:#222;">
   <!-- Avatar image in top left corner -->
   <img src="linkedin_profile_img.jpeg" style="width:100%">
+
   <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
-    <i class="fa fa-home w3-xxlarge"></i>
+    <i class="fa fa-home w3-xxlarge w3-text-amber"></i>
     <p>HOME</p>
   </a>
+
   <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-user w3-xxlarge"></i>
+    <i class="fa fa-user w3-xxlarge w3-text-light-blue"></i>
     <p>ABOUT</p>
   </a>
+
   <a href="#resume" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-download w3-xxlarge"></i>
+    <i class="fa fa-download w3-xxlarge w3-text-green"></i>
     <p>RESUME</p>
   </a>
+
   <a href="#projects" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-paper-plane w3-xxlarge"></i>
+    <i class="fa fa-paper-plane w3-xxlarge w3-text-purple"></i>
     <p>PROJECTS</p>
   </a>
+
   <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-envelope w3-xxlarge"></i>
+    <i class="fa fa-envelope w3-xxlarge w3-text-red"></i>
     <p>CONTACT</p>
   </a>
 </nav>
 
 <!-- Navbar on small screens (Hidden on medium and large screens) -->
 <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
-  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small" style="border-bottom: 3px solid #ff9800;">
     <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
     <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
     <a href="#resume" class="w3-bar-item w3-button" style="width:25% !important">RESUME</a>
@@ -58,88 +57,110 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 </div>
 
 <!-- Page Content -->
-<div class="w3-padding-large" id="main">
+<div class="w3-padding-large" id="main" style="margin-left:120px;">
   <!-- Header/Home -->
-  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Pedro Asacc.</h1>
-    <p>Computer Science Student in DU.</p>
-    <img src="J.jpg" alt="boy" class="w3-image" width="500" height="500">
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home" style="border-bottom: 3px solid #4CAF50;">
+    <h1 class="w3-jumbo">
+      <span class="w3-hide-small">I'm</span>
+      <span class="w3-text-amber">Pedro Asacc.</span>
+    </h1>
+    <p class="w3-text-light-grey">Computer Science Student in <span class="w3-text-light-blue">DU</span>.</p>
+
+    <img src="J.jpg" alt="boy" class="w3-image" width="500" height="500" style="margin-bottom:12px;border:4px solid #9c27b0;border-radius:8px;">
+
     <a href="https://www.youtube.com/@Peter_Senna">
-      <img src="youtube-logo.png" width="100" height="100" style="position: absolute; top: 400px; right: 300px">
+      <img src="youtube-logo.png" width="100" height="100" style="position:absolute; top:400px; right:300px; border:3px solid #f44336; border-radius:12px;">
     </a>
+
     <a href="https://www.instagram.com/peter.senna/?hl=en">
-      <img src="instagram-logo.png" width="125" height="75" style="position: absolute; top: 400px; left: 400px">
+      <img src="instagram-logo.png" width="125" height="75" style="position:absolute; top:400px; left:400px; border:3px solid #2196F3; border-radius:12px;">
     </a>
   </header>
 
   <!-- About Section -->
   <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
-    <h2 class="w3-text-light-grey">Pedro Asacc</h2>
-    <hr style="width:200px" class="w3-opacity">
-    <p>EDUCATION: University of Denver, Denver, CO June 2022 to Present, Bachelor of Science, Computer Science 
-    Course Work: Introduction to Computer Science and Introduction to Programming.
+    <h2 class="w3-text-light-grey">
+      <span class="w3-text-green">Pedro</span> <span class="w3-text-amber">Asacc</span>
+    </h2>
+    <hr style="width:200px" class="w3-opacity w3-border-amber">
+
+    <p>
+      EDUCATION: University of Denver, Denver, CO June 2022 to Present, Bachelor of Science, Computer Science
+      Course Work: Introduction to Computer Science and Introduction to Programming.
     </p>
 
     <p>
-    EXPERIENCE: StartSe, São Paulo, Brazil, January 2021 to February 2021 IT Intern ∙ Collaborated with IT team to work on website prototypes. ∙ Made the login process for 5 websites. Casa de Makers, São Paulo, Brazil, February 2022 to May 2022 Hardware Support Intern ∙ Made a system of sensors and actuators using Arduino and, consequently, C/C++. ∙ Worked in a group of 4 teachers as an Academic Material Maker for their hardware classes. ∙ Collaborated in the research team as a tester and a feedback maker. 
+      EXPERIENCE: StartSe, São Paulo, Brazil, January 2021 to February 2021 IT Intern ∙ Collaborated with IT team to work on website prototypes. ∙ Made the login process for 5 websites. Casa de Makers, São Paulo, Brazil, February 2022 to May 2022 Hardware Support Intern ∙ Made a system of sensors and actuators using Arduino and, consequently, C/C++. ∙ Worked in a group of 4 teachers as an Academic Material Maker for their hardware classes. ∙ Collaborated in the research team as a tester and a feedback maker.
     </p>
-    <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
-    <p class="w3-wide">Python</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:60%"></div>
-    </div>
-    <p class="w3-wide">Portuguese Fluency</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:100%"></div>
-    </div>
-    <p class="w3-wide">English Fluency</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:100%"></div>
-    </div><br>
 
-    
+    <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
+
+    <p class="w3-wide w3-text-amber">Python</p>
+    <div class="w3-white" style="border-radius:6px;">
+      <div class="w3-blue" style="height:28px;width:60%;border-radius:6px;"></div>
+    </div>
+
+    <p class="w3-wide w3-text-light-blue">Portuguese Fluency</p>
+    <div class="w3-white" style="border-radius:6px;">
+      <div class="w3-green" style="height:28px;width:100%;border-radius:6px;"></div>
+    </div>
+
+    <p class="w3-wide w3-text-purple">English Fluency</p>
+    <div class="w3-white" style="border-radius:6px;">
+      <div class="w3-purple" style="height:28px;width:100%;border-radius:6px;"></div>
+    </div>
+    <br>
+
     <!-- Grid for resume -->
-    <div class="w3-row-padding" style="margin:0 -16px" id ="resume">
-        <h2 class="w3-text-light-grey">Resume</h2>
-        <hr style="width:200px" class="w3-opacity">
-        <img src="resume_web.jpg" alt="resume_photo" class="w3-image" width="587" height="533">
+    <div class="w3-row-padding" style="margin:0 -16px" id="resume">
+      <h2 class="w3-text-light-grey">Resume</h2>
+      <hr style="width:200px" class="w3-opacity w3-border-light-blue">
+      <img src="resume_web.jpg" alt="resume_photo" class="w3-image" width="587" height="533" style="margin-bottom:12px;border:3px solid #ff9800;border-radius:10px;">
     </div>
+
     <a href="asacc_resume.pdf" download="asacc_resume">
-        <button class="w3-button w3-light-grey w3-padding-large w3-section" type="button">
-            <i class="fa fa-download"></i> Download Resume
-        </button>
-        </a>
+      <button class="w3-button w3-padding-large w3-section w3-amber w3-hover-orange" type="button" style="border-radius:10px;">
+        <i class="fa fa-download"></i> Download Resume
+      </button>
+    </a>
     <!-- End Grid -->
-    </div>
+  </div>
 
   <!-- Portfolio Section -->
   <div class="w3-padding-64 w3-content" id="projects">
     <h2 class="w3-text-light-grey">Projects</h2>
-    <hr style="width:200px" class="w3-opacity">
+    <hr style="width:200px" class="w3-opacity w3-border-green">
 
     <!-- Grid for photos -->
     <div class="w3-row-padding" style="margin:0 -16px">
       <div class="w3-half">
-        <img src="sandgame.jpg" style="width:100%">
-        <p> SandGame is an interactive animation in which you can control sand, water and lines with your mouse press.
+        <img src="sandgame.jpg" style="width:100%;margin-bottom:12px;border:3px solid #4CAF50;border-radius:10px;">
+        <p>
+          SandGame is an interactive animation in which you can control sand, water and lines with your mouse press.
         </p>
-        <a href="https://drive.google.com/file/d/1YOInElEkCarhcxaUFXF0bOXa3hoP-luM/view?usp=sharing">SandGame Code</a>
-        <img src="wordle.jpg" style="width:100%">
-        <p> Wordle is a game in which you have 6 trials to try to guess a random word. 
-            After each trial, the game will tell what letter is in the correct place, what letter is in the random word but is not in the correct place, and what letter is not in the word.
+        <a class="w3-text-amber" href="https://drive.google.com/file/d/1YOInElEkCarhcxaUFXF0bOXa3hoP-luM/view?usp=sharing">SandGame Code</a>
+
+        <img src="wordle.jpg" style="width:100%;margin-top:16px;margin-bottom:12px;border:3px solid #2196F3;border-radius:10px;">
+        <p>
+          Wordle is a game in which you have 6 trials to try to guess a random word.
+          After each trial, the game will tell what letter is in the correct place, what letter is in the random word but is not in the correct place, and what letter is not in the word.
         </p>
-        <a href="https://drive.google.com/file/d/10yIx3IoPoHOSoR-fxR7UbHtFAx05-9nQ/view?usp=sharing">Wordle Code</a>
+        <a class="w3-text-light-blue" href="https://drive.google.com/file/d/10yIx3IoPoHOSoR-fxR7UbHtFAx05-9nQ/view?usp=sharing">Wordle Code</a>
       </div>
+
       <div class="w3-half">
-        <img src="pong_image.jpg" style="width:100%">
-        <p> Scratch Your Pong is a game development course that I made for teaching the basics of game development to beginners through Scratch. 
-            The final product of the course is a Pong game. 
+        <img src="pong_image.jpg" style="width:100%;margin-bottom:12px;border:3px solid #9c27b0;border-radius:10px;">
+        <p>
+          Scratch Your Pong is a game development course that I made for teaching the basics of game development to beginners through Scratch.
+          The final product of the course is a Pong game.
         </p>
-        <a href="https://sites.google.com/avenues.org/becoder/home">Scratch Your Pong Website</a>
-        <img src="paiting_tool.jpg" style="width:100%">
-        <p> The Painting Tool is a drawing software that I have made that has some features such as rgb or color change, line thickness change, reset button and the eraser button. 
+        <a class="w3-text-purple" href="https://sites.google.com/avenues.org/becoder/home">Scratch Your Pong Website</a>
+
+        <img src="paiting_tool.jpg" style="width:100%;margin-top:16px;margin-bottom:12px;border:3px solid #f44336;border-radius:10px;">
+        <p>
+          The Painting Tool is a drawing software that I have made that has some features such as rgb or color change, line thickness change, reset button and the eraser button.
         </p>
-        <a href="https://docs.google.com/presentation/d/1oc5hyCmv3cvqVlI_lIcBT1MDacpK2nT7fk0ag9wSAXI/edit?usp=sharing">Painting Tool Process Journal</a>
+        <a class="w3-text-red" href="https://docs.google.com/presentation/d/1oc5hyCmv3cvqVlI_lIcBT1MDacpK2nT7fk0ag9wSAXI/edit?usp=sharing">Painting Tool Process Journal</a>
       </div>
     <!-- End photo grid -->
     </div>
@@ -149,28 +170,26 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   <!-- Contact Section -->
   <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
     <h2 class="w3-text-light-grey">Contact Me</h2>
-    <hr style="width:200px" class="w3-opacity">
+    <hr style="width:200px" class="w3-opacity w3-border-red">
 
     <p>Let's get in touch. Send me a message:</p>
 
     <form action="/action_page.php" target="_blank">
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+      <p><input class="w3-input w3-padding-16 w3-border w3-border-amber" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border w3-border-light-blue" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16 w3-border w3-border-green" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-padding-16 w3-border w3-border-purple" type="text" placeholder="Message" required name="Message"></p>
       <p>
-        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+        <button class="w3-button w3-padding-large w3-red w3-hover-orange" type="submit" style="border-radius:10px;">
           <i class="fa fa-paper-plane"></i> SEND MESSAGE
         </button>
       </p>
     </form>
   <!-- End Contact Section -->
   </div>
-  
 
 <!-- END PAGE CONTENT -->
 </div>
 
 </body>
 </html>
-
